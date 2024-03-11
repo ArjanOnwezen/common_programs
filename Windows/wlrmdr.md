@@ -37,7 +37,7 @@ Notifications from `wlrmdr.exe` may be managed through built-in settings app:
 
 General Settings:
 
-![Settings](./images/wlrmdr1.png)
+![Settings](./images/wlrmdrl1.png)
 
 Windows Logon Reminders Settings:
 
