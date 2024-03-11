@@ -37,11 +37,11 @@ Notifications from `wlrmdr.exe` may be managed through built-in settings app:
 
 General Settings:
 
-![Settings](./images/wlrmdr1.PNG)
+![Settings](./images/wlrmdr1.png)
 
 Windows Logon Reminders Settings:
 
-![Details](./images/wlrmdr2.PNG)
+![Details](./images/wlrmdr2.png)
 
 ~~~
 source:https://github.com/gtworek/PSBits/blob/master/docs/wlrmdr.md
