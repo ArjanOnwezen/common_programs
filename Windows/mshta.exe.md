@@ -1,16 +1,16 @@
-### The magic behind ```mshta.exe```
+# The magic behind ```mshta.exe```
 Mshta.exe is a utility that executes **Microsoft HTML Applications (HTA) **
 An **HTML Application (HTA)** is a Microsoft Windows program whose source code consists of HTML, Dynamic HTML, and one or more scripting languages supported by Internet Explorer, such as VBScript or JScript.
 
-#### Parameters
+## Parameters
 Parameters to the ```mshta.exe``` include:
 * ```-xxx``` 
 
 
-#### Special cases
+### Special cases
 
 
-#### Malicious scenarios
+## Malicious scenarios
 Because it runs on windows and support VBScript and Jscript, it's very obvious that it could be used in a malicious way
 
 **The following is the format of HTA file**
@@ -194,6 +194,6 @@ Notes
     
     
 
-### Reference 
+## Reference 
 * [Good Resource about MSHTA] http://blog.sevagas.com/?Hacking-around-HTA-files
 * https://github.com/karemfaisal/SMUC/blob/master/MSHTA/Mshta.md
