@@ -190,7 +190,7 @@ Notes
 
     
     
-    ![MSHTA](./imaghes/mshta.jpg)
+    ![MSHTA](./images/mshta.jpg)
     
     
 
