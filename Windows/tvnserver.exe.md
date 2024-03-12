@@ -7,10 +7,8 @@ TightVNC was created by Constantin Kaplinsky, a Russian programmer, in 2000. It 
 #### Parameters
 Parameters to the ```tvnserver.exe``` include:
 
-|parameter|description|
-|--|--|
-|-controlservice ||
-|-slave||
+* ```-controlservice``` 
+* ```-slave``` 
 
 
 #### Special cases
