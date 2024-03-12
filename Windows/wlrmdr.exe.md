@@ -1,9 +1,9 @@
-### The magic behind `wlrmdr.exe`
+# The magic behind `wlrmdr.exe`
 
 The tool is intended to display reminders from Winlogon (WinLogon ReMinDeRs). Such reminders may include scenarios like password expiration, additional credentials required etc. 
 Two very special cases are related to the cloud passwords discussed below: one for the expiration, and one for change.
 
-#### Parameters 
+## Parameters 
 Parameters to the `wlrmdr.exe` include:
 - `-c` parameter effectively making nothing happen, except for -a=11
 - `-s` somehow related to timeouts, but not very clear. It may be negative, except for -1, having a special meaning.
@@ -19,13 +19,13 @@ Other parameters are totally ignored and do not affect the way how wlrmdr.exe wo
 
 `Wlrmdr.exe` tries to identify its parent process, and when it is `winlogon.exe`, it changes the way how it works, but I was unable to follow this path any deeper so far. It's also related to the "-1" specified as a value for the `-s` parameter.
 
-#### Special cases
+### Special cases
 Special values for `-a` include:
 - `8` - prompts for elevated credentials, but I was unable to identify the precise scenario.
 - `10` - intended for cloud password change. Allows to specify `-u` parameter and requires click on notification before URL (or doc) is executed.
 - `11` - intended for cloud password expiration. Allows to specify `-u` parameter and makes URL (or doc) executed without user interaction.
 
-#### Malicious scenarios
+## Malicious scenarios
 Practical usage scenarios may include the following steps:
 1. Invoking URL for binaries. The behavior will depend on the internet browser, but by default it will download the file to `%userprofile%\Downloads` assigning the random name and `.crdownload` extension.
 1. Invoking series of `cmd.exe /c` commands for identifying and renaming the downloaded binary to the desired name and extension.
@@ -43,6 +43,6 @@ Windows Logon Reminders Settings:
 
 ![Details](./images/wlrmdr2.png)
 
-~~~
-source:https://github.com/gtworek/PSBits/blob/master/docs/wlrmdr.md
-~~~
+## References
+* https://github.com/gtworek/PSBits/blob/master/docs/wlrmdr.md
+
